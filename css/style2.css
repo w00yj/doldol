@@ -1,0 +1,594 @@
+/* hopejoyagdol - sub1 stylesheet */
+
+/* font */
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXEN_TIRE_Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Noto Sans KR", serif; */
+
+
+/* reset */
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+a{ text-decoration: none; color: inherit; }
+ul, li{ list-style: none; }
+html{
+    color: #333; font-family: "Noto Sans KR", serif;
+}
+
+
+/* start layout */
+
+/* ======================================================================================================================== header */
+header{
+    width: 1340px; height: 100px;
+    /* margin: 0 auto; */
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    position: fixed;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+header h1{
+    position: absolute;
+    margin-left: 30px;
+}
+
+header h1 img{
+    width: 220px; height: 100px;
+}
+
+header .menu{
+    display: flex;
+    margin-left: 270px;
+    margin-top: 45px;
+}
+
+header .menu>li{
+    font-family: "Noto Sans KR", serif;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+header .menu>li>a{
+    width: 140px; height:40px;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 55px;
+    padding-top: 10px;
+}
+
+header .menu>li:hover>a{
+    background-color: #36af3d;
+    color: #fff;
+    font-weight: bold;
+}
+header .menu>li:last-child:hover>a{
+    background-color: transparent;
+}
+
+header .depth2{
+    margin-top: 30px;
+}
+
+header .depth2 li{
+    margin-bottom: 25px;
+    font-family: "Noto Sans KR", serif;
+}
+
+header .depth2 li a{
+    font-size: 16px;
+    color: #fff
+}
+
+header .depth2>li>a:hover{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+header .log-icon img{
+    width: 30px; height: 30px;
+}
+
+header #loicon:hover{
+    background: transparent;
+}
+
+header .drop-box{
+    width: 100%; height: 360px;
+    position: absolute;
+    background-color: #36af3d;
+    top: 100%;
+    z-index: -1;
+}
+
+
+/* ======================================================================================================================== title */
+.title{
+    width: 1340px; height: 400px;
+    margin: 100px auto 0;
+    position: relative;
+    border-bottom: 1px solid #666;
+}
+
+.title h2{
+    position: absolute;
+    font-size: 45px;
+    top: 150px; left: 100px;
+}
+
+.title p{
+    position: absolute;
+    font-size: 18px;
+    top: 220px; left: 100px;
+    color: #666;
+}
+
+.c-title{
+    font-family: 'NEXEN_TIRE_Bold';
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 60px;
+}
+
+.c-text{
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+
+/* ========================================================================= con */
+
+.contents{
+    width: 1000px;
+    /* border: 1px solid; */
+    margin-left: 490px;
+    margin-top: 80px;
+}
+
+.contents tr td:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 80px;
+}
+
+.contents input[type=text]{
+    width: 150px; height: 35px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.contents select{
+    width: 150px; height: 35px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contents p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.contents h2{
+    font-family: 'NEXEN_TIRE_Bold';
+    font-weight: normal;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.con1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.con1 table{
+    margin-left: 200px;
+}
+
+.con1 tr td{
+    padding-bottom: 20px;
+}
+
+.con1 button{
+    width: 150px; height: 30px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.con1 button:hover{
+    background-color: #c4e0c5;
+}
+
+.con1 button:first-child{
+    margin-right: 10px;
+}
+
+.con1 button.on{
+    border: none;
+    background-color: #36af3d;
+    color: #fff;
+}
+
+.con1 tr:nth-child(2) select{
+    width: 230px; height: 35px;
+}
+
+.con2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#con2-2{
+    margin-bottom: 81px;
+}
+
+.con2 table{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.con2 tr td{
+    padding-bottom: 20px;
+}
+
+.con2 a{
+    display: block;
+    text-align: center;
+    float: left;
+    width: 150px; height: 30px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.con2 a:first-child{
+    margin-right: 10px;
+}
+
+.con2 a.on{
+    border: none;
+    background-color: #36af3d;
+    color: #fff;
+}
+
+.con2 button{
+    width: 100px; height: 30px;
+    border: 1px solid #999;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.con2 tr:nth-child(2) select{
+    width: 100px;
+}
+
+.con2 tr:nth-child(2) input[type=text]{
+    width: 100px;
+}
+
+.con2 tr:nth-child(3) input[type=text]{
+    width: 200px;
+}
+
+#con2-2 tr:nth-child(3) select{
+    width: 100px;
+}
+
+#con2-2 tr:nth-child(3) input[type=text]{
+    width: 100px;
+}
+
+#con2-1 tr:nth-child(3) button{
+    cursor: pointer;
+}
+
+.con2-btn{
+    margin-left: 330px;
+}
+
+.con2-btn .on{
+    border: none;
+    background-color: #36af3d;
+    color: #fff;
+}
+
+.con2-btn a:hover{
+    background-color: #c4e0c5;
+}
+
+.con3{
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#con3-2{
+    margin-bottom: 80px;
+}
+
+.con3 table{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.con3 tr td{
+    padding-bottom: 20px;
+}
+
+.con3 a{
+    display: block;
+    float: left;
+    width: 150px; height: 30px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.con3 a:first-child{
+    margin-right: 10px;
+}
+
+.con3-btn{
+    margin-left: 330px;
+}
+
+.con3-btn .on{
+    border: none;
+    background-color: #36af3d;
+    color: #fff;
+}
+
+.con3-btn a:hover{
+    background-color: #c4e0c5;
+}
+
+.contents .btn button{
+    width: 180px; height: 40px;
+    border: #999;
+    background-color: #36af3d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'NEXEN_TIRE_Bold';
+    font-weight: normal;
+    text-align: center;
+    margin-left: 400px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/* ======================================================================================================================== footer */
+footer{
+    width: 1340px; height: 210px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #493926;
+}
+
+footer .f-left{
+    float: left;
+}
+
+footer .f-logo{
+    display: inline-block;
+    margin-left: -490px;
+    margin-top: 5px;
+}
+
+footer .f-logo img{
+    width: 180px; height: 80px;
+}
+
+footer .f-adress{
+    float: left;
+    margin-left: 5px;
+    margin-top: 90px;
+}
+
+footer .f-adress li{
+    float: left;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    color: #fff;
+    /* border-right: 1px  solid #d8d8d8; */
+}
+
+footer .f-adress address{
+    font-style: normal;
+}
+
+footer .f-left .fl-span{
+    font-size: 14px;
+    margin-left: 21px;
+    color: #cfcfcf;
+}
+
+footer .f-adress::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .f-right{
+    float: right;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+footer .f-right .fr-menu{
+    margin-bottom: 10px;
+}
+
+footer .f-right .fr-menu li{
+    float: left;
+    padding-left: 40px;
+}
+
+footer .f-right .fr-menu a{
+    color: #fff;
+}
+
+footer .f-right .fr-menu a:hover{
+    color: #ff8a00;
+    font-weight: bold;
+}
+
+footer .f-right .fr-span{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+footer .f-right .fr-span strong{
+    color: #fff;
+}
+
+
+footer .fr-menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .f-sns{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer .f-sns li{
+    padding-left: 15px;
+}
+
+footer .f-sns li:nth-child(1) img{
+    width: 40px; height: 35px;
+}
+footer .f-sns li:nth-child(2) img{
+    width: 40px; height: 38px;
+}
+footer .f-sns li:nth-child(3) img{
+    width: 40px; height: 40px;
+}
+footer .f-sns li:nth-child(4) img{
+    width: 29px; height: 29px;
+    margin-top: 5px;
+}
+
+
+/* ======================================================================================================================== quick */
+.quick{
+    position: fixed;
+    right: 140px;
+    bottom: 500px;
+}
+
+.quick .give{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #36af3d;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    position: relative;
+} 
+
+.quick a{
+    width: 100%; height: 100%;
+    display: block;
+}
+
+.quick .give img{
+    width: 35px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.quick .give p{
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%; left: 15%;
+}
+
+.quick .get{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #36af3d;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    position: relative;
+} 
+
+.quick .get p{
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 12%; left: 15%;
+}
+
+.quick .get img{
+    width: 37px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.quick .qna{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #493926;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+} 
+
+.quick .qna p{
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -5%; left: 15%;
+}
+
+.quick .qna img{
+    width: 37px;
+    margin-top: 2px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -90%);
+}

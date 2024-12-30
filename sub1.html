@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>희망조약돌</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script2.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!-- ====================================================================================================================== header -->
+    <header>
+        <h1><a href="main.html"><img src="mainimg/t-logo.png" alt="logo"></img></a></h1>
+        <div class="gnb">
+            <ul class="menu">
+                <li class="gndmenu"><a href="#">희망조약돌</a>
+                    <ul class="depth2">
+                        <li><a href="#">단체소개</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">재정보고</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+
+                <li class="gndmenu"><a href="#">사업소개</a>
+                    <ul class="depth2">
+                        <li><a href="#">주요사업</a></li>
+                        <li><a href="#">공간기부</a></li>
+                        <li><a href="#">강연강의기부</a></li>
+                        <li><a href="#">캠페인</a></li>
+                        <li><a href="#">사회공헌파트너</a></li>
+                    </ul>
+                </li>
+
+                <li class="gndmenu"><a href="#">함께해요</a>
+                    <ul class="depth2">
+                        <li><a href="#">기부방법</a></li>
+                        <li><a href="sub1.html">기부신청</a></li>
+                        <li><a href="#">물품나눔신청</a></li>
+                        <li><a href="#">기부영수증신청</a></li>
+                        <li><a href="#">기부금증액신청</a></li>
+                        <li><a href="#">봉사지원신청</a></li>
+                    </ul>
+                </li>
+
+                <li class="gndmenu"><a href="#">활동소식</a>
+                    <ul class="depth2">
+                        <li><a href="#">봉사활동</a></li>
+                        <li><a href="#">복지뉴스</a></li>
+                        <li><a href="#">언론보도</a></li>
+                    </ul>
+                </li>
+
+                <li class="gndmenu"><a href="#">지원받기</a>
+                    <ul class="depth2">
+                        <li><a href="sub2.html">지원방법</a></li>
+                        <li><a href="#">온라인지원신청</a></li>
+                    </ul>
+                </li>
+
+                <li class="gndmenu"><a href="#">커뮤니티</a>
+                    <ul class="depth2">
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">문의사항</a></li>
+                    </ul>
+                </li>
+
+                <li class="log-icon">
+                    <a href="#" id="loicon">
+                        <img class="logicon" src="mainimg/loginicon.png" alt="loginicon">
+                        <img class="hlogicon" src="mainimg/loginhovericon.png" alt="loginhover">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="drop-box"></div>
+        </div>
+    </header>
+    <!-- ====================================================================================================================== title -->
+    <div class="title">
+        <img src="sub1img/s1-title.png" alt="sub1 title">
+        <h2>희망조약돌 나눔신청</h2>
+        <p>작은 도움이 모여 아이들과 어르신들에게 <br> 희망디딤돌이 되어주세요.</p>
+    </div>
+    
+
+    <h1 class="c-title">후원신청</h1>
+    <p class="c-text">당신의 소중한 나눔이 <br> 세상을 더 따뜻하게 합니다.</p>
+
+    <div class="contents">
+        <div class="con1">
+            <h2>기부정보</h2>
+            <table>
+                <tr>
+                    <td>나눔주기</td>
+                    <td>
+                        <button> 정기나눔 </button>
+                        <button> 일시나눔 </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>기부선택</td>
+                    <td>
+                        <select name="give" id="">
+                            <option value="">국내 빈곤노인 지원</option>
+                            <option value="">국내 결손아동 지원</option>
+                            <option value="">국내 위기가정아동 지원</option>
+                            <option value="">국내 빈곤가정 지원</option>
+                            <option value="">국내 취약거주환경 지원</option>
+                            <option value="">국내 미혼모 지원</option>
+                            <option value="">국내 희귀난치병, 화상환자 지원</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>기부금 선택</td>
+                    <td>
+                        <select name="givemoney" id="">
+                            <option value="">20,000 원</option>
+                            <option value="">40,000 원</option>
+                            <option value="">60,000 원</option>
+                            <option value="">80,000 원</option>
+                            <option value="">100,000 원</option>
+                        </select>
+                        <input type="text" placeholder=" 직접입력 "> 원
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="con2">
+            <h2>후원자 기본정보</h2>
+            <div class="con2-btn">
+                <a href="#con2-1" id="c2btn-1">개인</a> <a href="#con2-2" id="c2btn-2">기업/단체</a>
+            </div>
+
+            <table id="con2-1">
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" placeholder="* 이름을 입력해주세요."></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td>
+                        <select name="phnum" id="">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">02</option>
+                            <option value="">051</option>
+                            <option value="">053</option>
+                            <option value="">032</option>
+                            <option value="">062</option>
+                            <option value="">042</option>
+                            <option value="">052</option>
+                            <option value="">044</option>
+                            <option value="">031</option>
+                            <option value="">033</option>
+                            <option value="">043</option>
+                            <option value="">041</option>
+                            <option value="">063</option>
+                            <option value="">061</option>
+                            <option value="">054</option>
+                            <option value="">055</option>
+                            <option value="">064</option>
+                        </select>
+                        - <input type="text"> - <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <input type="text" placeholder=" * 주소입력 ">  <button>주소찾기</button> <br>
+                        <input type="text" placeholder=" * 상세주소를 입력해주세요. ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>
+                        <input type="text"> @ 
+                        <select name="e-mail" id="">
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">gmail.com</option>
+                            <option value="">kakao.com</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="con2">
+            <table id="con2-2">
+                <tr>
+                    <td>단체 / 기업명</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>담당자명</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>담당자 연락처</td>
+                    <td>
+                        <select name="phnum" id="">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">02</option>
+                            <option value="">051</option>
+                            <option value="">053</option>
+                            <option value="">032</option>
+                            <option value="">062</option>
+                            <option value="">042</option>
+                            <option value="">052</option>
+                            <option value="">044</option>
+                            <option value="">031</option>
+                            <option value="">033</option>
+                            <option value="">043</option>
+                            <option value="">041</option>
+                            <option value="">063</option>
+                            <option value="">061</option>
+                            <option value="">054</option>
+                            <option value="">055</option>
+                            <option value="">064</option>
+                        </select>
+                        - <input type="text"> - <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>담당자 이메일</td>
+                    <td>
+                        <input type="text"> @ 
+                        <select name="e-mail" id="">
+                            <option value="">naver.com</option>
+                            <option value="">daum.net</option>
+                            <option value="">gmail.com</option>
+                            <option value="">kakao.com</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="con3">
+            <h2>후원금 결제정보</h2>
+            <div class="con3-btn">
+                <a href="#con3-1" id="c3btn-1">계좌이체</a> <a href="#con3-2" id="c3btn-2">신용카드</a>
+            </div>
+            <table  id="con3-1">
+                <tr>
+                    <td>은행명</td>
+                    <td>
+                        <select name="bank" id="">
+                            <option value="">카카오뱅크</option>
+                            <option value="">농협은행</option>
+                            <option value="">국민은행</option>
+                            <option value="">신한은행</option>
+                            <option value="">우리은행</option>
+                            <option value="">기업은행</option>
+                            <option value="">하나은행</option>
+                            <option value="">새마을은행</option>
+                            <option value="">우체국</option>
+                            <option value="">SC제일은행</option>
+                            <option value="">대구은행</option>
+                            <option value="">부산은행</option>
+                            <option value="">경남은행</option>
+                            <option value="">광주은행</option>
+                            <option value="">신협</option>
+                            <option value="">수협은행</option>
+                            <option value="">산업은행</option>
+                            <option value="">전북은행</option>
+                            <option value="">제주은행</option>
+                            <option value="">씨티뱅크</option>
+                            <option value="">토스뱅크</option>
+                            <option value="">케이이뱅크</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>예금주명</td>
+                    <td><input type="text"> <p>* 예금주명을 올바르게 입력해주세요.</p></td>
+                </tr>
+                <tr>
+                    <td>계좌번호</td>
+                    <td><input type="text"> <p>* - 빼고 계좌번호를 입력해주세요.</p></td>
+                </tr>
+                <tr>
+                    <td>출금일</td>
+                    <td>
+                        <select name="date" id="">
+                            <option value="">매월 5일</option>
+                            <option value="">매월 10일</option>
+                            <option value="">매월 15일</option>
+                            <option value="">매월 20일</option>
+                            <option value="">매월 25일</option>
+                            <option value="">매월 30일일</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="con3">
+            <table id="con3-2">
+                <tr>
+                    <td>카드사</td>
+                    <td>
+                        <select name="card" id="">
+                            <option value="">롯데카드</option>
+                            <option value="">BC카드</option>
+                            <option value="">삼성카드</option>
+                            <option value="">신한카드</option>
+                            <option value="">우리카드</option>
+                            <option value="">하나카드</option>
+                            <option value="">현대카드</option>
+                            <option value="">KB국민카드</option>
+                            <option value="">NH농협카드드</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>카드주명</td>
+                    <td><input type="text"> <p>* 카드주명을 올바르게 입력해주세요.</p></td>
+                </tr>
+                <tr>
+                    <td>카드번호</td>
+                    <td><input type="text"> <p>* - 빼고 카드번호를 입력해주세요.</p></td>
+                </tr>
+                <tr>
+                    <td>결제일</td>
+                    <td>
+                        <select name="date" id="">
+                            <option value="">매월 5일</option>
+                            <option value="">매월 10일</option>
+                            <option value="">매월 15일</option>
+                            <option value="">매월 20일</option>
+                            <option value="">매월 25일</option>
+                            <option value="">매월 30일</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="btn"><button>기부신청하기</button></div>
+        </div>
+    </div>
+
+    <!-- ====================================================================================================================== footer -->
+    <footer>
+        <div class="f-left">
+            <div class="f-logo">
+                <img src="mainimg/f-logo.png" alt="footer-logo">
+            </div>
+    
+            <div class="f-adress">
+                <ul>
+                    <li>사단법인 : 희망조약돌</li>
+                    <li>고유번호증 : 835-82-00135</li>
+                    <li>대표자 : 방민지</li>
+                </ul>
+                <ul>
+                    <li>대표전화 : 031-360-4897</li>
+                    <li>FAX : 031-387-8632</li>
+                    <li>E-mail : hopejoyagdol@joyagdol.com</li>
+                </ul>
+                <ul>
+                    <li>
+                        <address>경기도 안양시 동안구 관악대로 456, 6층 사단법인 희망조약돌</address>
+                    </li>
+                </ul>
+                <span class="fl-span">COPYRIGHT@HOPEJOYAGDOL.ALL RIGHT RESERVED</span>
+            </div>
+    
+            <div class="f-right">
+                <ul class="fr-menu">
+                    <li><a href="#">희망조약돌 소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">기부나눔후원문의</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+    
+                <div class="fr-span">
+                    <span class="fr-span1"><strong>자발적 기부금 계좌</strong><br>국민은행 271210-04-234576 (예금주 :사단법인 희망조약돌)
+                    </span>
+                    <span class="fr-span2">상담시간 : 10:00 ~ 16:00 (월 ~ 금, 공휴일 휴무) <br> 점심시간 : 12:00 ~ 14:00</span>
+                </div>
+    
+                <ul class="f-sns">
+                    <li><a href="https://www.facebook.com/hopejoyagdol" target="_blank"><img src="mainimg/facebook.png"
+                                alt="페이스북"></a></li>
+                    <li><a href="https://x.com/vnK6Iz4KxaVTlY5" target="_blank"><img src="mainimg/twitter.png"
+                                alt="트위터"></a></li>
+                    <li><a href="https://www.instagram.com/hopejoyagdol1004/" target="_blank"><img
+                                src="mainimg/instargram.png" alt="인스타그램"></a></li>
+                    <li><a href="https://blog.naver.com/hopejoyagdol" target="_blank"><img src="mainimg/naverblog.png"
+                                alt="네이버블로그"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- ====================================================================================================================== quick -->
+<div class="quick">
+    <ul>
+        <li>
+            <a href="sub1.html" class="give">
+                <img class="qhicon" src="mainimg/givehovericon.png" alt="giveicon hover">
+                <img class="qicon" src="mainimg/giveicon.png" alt="giveicon">
+                <p>기부신청</p>
+            </a>
+        </li>
+        <li>
+            <a href="sub2.html" class="get">
+                <img class="qhicon" src="mainimg/gethovericon.png" alt="geticon hover">
+                <img class="qicon" src="mainimg/geticon.png" alt="geticon">
+                <p>지원하기</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="qna">
+                <img class="qhicon" src="mainimg/qnahovericon.png" alt="qnaicon hover">
+                <img class="qicon" src="mainimg/qnaicon.png" alt="qnaicon">
+                <p>문의하기</p>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

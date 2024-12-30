@@ -1,0 +1,645 @@
+/* hopejoyagdol - sub2 stylesheet */
+
+/* font */
+@font-face {
+    font-family: 'RiaSans-ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXEN_TIRE_Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* font-family: "Noto Sans KR", serif; */
+
+
+/* reset */
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+a{ text-decoration: none; color: inherit; }
+ul, li{ list-style: none; }
+html{ color: #333; font-family: "Noto Sans KR", serif;}
+
+/* start layout */
+
+/* ======================================================================================================================== header */
+header{
+    width: 1340px; height: 100px;
+    /* margin: 0 auto; */
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    position: fixed;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+header h1{
+    position: absolute;
+    margin-left: 30px;
+}
+
+header h1 img{
+    width: 220px; height: 100px;
+}
+
+header .menu{
+    display: flex;
+    margin-left: 270px;
+    margin-top: 45px;
+}
+
+header .menu>li{
+    font-family: "Noto Sans KR", serif;
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+header .menu>li>a{
+    width: 140px; height:40px;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    padding-bottom: 55px;
+    padding-top: 10px;
+}
+
+header .menu>li:hover>a{
+    background-color: #36af3d;
+    color: #fff;
+    font-weight: bold;
+}
+header .menu>li:last-child:hover>a{
+    background-color: transparent;
+}
+
+header .depth2{
+    margin-top: 30px;
+}
+
+header .depth2 li{
+    margin-bottom: 25px;
+    font-family: "Noto Sans KR", serif;
+}
+
+header .depth2 li a{
+    font-size: 16px;
+    color: #fff
+}
+
+header .depth2>li>a:hover{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+header .log-icon img{
+    width: 30px; height: 30px;
+}
+
+header #loicon:hover{
+    background: transparent;
+}
+
+header .drop-box{
+    width: 100%; height: 360px;
+    position: absolute;
+    background-color: #36af3d;
+    top: 100%;
+    z-index: -1;
+}
+
+
+/* ======================================================================================================================== title */
+.title{
+    width: 1340px; height: 400px;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.title p{
+    position: absolute;
+    top: 155px; left: 82px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title h2{
+    position: absolute;
+    top: 178px; left: 80px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
+/* ======================================================================================================================== section1 */
+.sec1{
+    width: 1340px; height: 820px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    position: relative;
+}
+
+.sec1 h2{
+    font-family: 'NEXEN_TIRE_Bold';
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.sec1 ul{
+    width: 1000px; height: 500px;
+    /* border: 1px solid; */
+    margin-top: 110px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.sec1 li{
+    position: relative;
+}
+
+.sec1 h3{
+    width: 150px; height: 35px;
+    font-size: 18px;
+    padding: 3px;
+    text-align: center;
+    background-color: #36af3d;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+.sec1 p{
+    position: absolute;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: -35px;
+    margin-left: 350px;
+    font-weight: bold;
+}
+
+.sec1 li:nth-child(2) p{
+    margin-top: -45px;
+}
+.sec1 li:nth-child(3) p{
+    margin-top: -33px;
+}
+.sec1 li:nth-child(4) p{
+    margin-top: -45px;
+}
+
+.sec1 .sec1-utxt{
+    position: absolute;
+    width: 1000px;
+    margin-left: 30px;
+    color: #666;
+}
+
+.sec1 .sec1-utxt strong{
+    color: #333;
+    font-size: 20px;
+}
+
+.sec1 .sec1-utxt .sec1-email{
+    margin-left: 350px;
+    margin-top: -60px;
+}
+
+.sec1 .sec1-utxt .sec1-fax{
+    margin-left: 670px;
+    margin-top: -60px;
+}
+
+
+/* ======================================================================================================================== section2 */
+.sec2{
+    width: 1340px; height: 800px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+.sec2 h2{
+    font-family: 'NEXEN_TIRE_Bold';
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.sec2 ul{
+    width: 1340px; height: 400px;
+    position: relative;
+}
+
+.sec2 li{
+    width: calc( 1000px / 4 ); height: 200px;
+    float: left;
+    font-family: 'NEXEN_TIRE_Bold';
+    margin-left: 55px;
+    margin-top: 80px;
+    /* border: 1px solid; */
+}
+
+.sec2 li h3{
+    font-family: 'RiaSans-ExtraBold';
+    font-size: 55px;
+    color: #36af3d;
+    text-shadow: 3px 3px 2px #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.sec2 li p{
+    font-size: 22px;
+    color: #333;
+}
+
+.sec2 li p b{
+    font-size: 18px;
+    color: #666;
+    font-family: "Noto Sans KR", serif;
+    font-weight: normal;
+}
+
+.sec2 .sec2-txt{
+    margin-top: -70px;
+    margin-left: 50px;
+    color: #666;
+}
+
+.sec2 .sec2-btn{
+    position: absolute;
+
+}
+
+.sec2 .sec2-btn a:first-child {
+    display: block;
+    font-weight: bold;
+    width: 270px; height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #493926;
+    padding: 5px;
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+.sec2 .sec2-btn a:last-child{
+    display: block;
+    font-weight: bold;
+    width: 270px; height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #493926;
+    padding: 5px;
+    margin-top: -61px;
+    margin-left: 700px;
+}
+
+
+/* ======================================================================================================================== section3 */
+.sec3{
+    width: 1340px; height: 450px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+.sec3 h2{
+    font-family: 'NEXEN_TIRE_Bold';
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sec3 .sec3-pn{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #666;
+}
+
+.sec3 ul{
+    width: 1200px; height: 100px;
+    margin-left: 90px;
+    margin-top: 50px;
+    /* border: 1px solid; */
+}
+
+.sec3 li{
+    /* width: calc( 1100px / 4 ); height: 100px; */
+    /* border: 1px solid; */
+    font-family: 'NEXEN_TIRE_Bold';
+    float: left;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: normal;
+    display: flex;
+}
+
+.sec3 li:nth-child(1){
+    margin-left: 20px;
+}
+.sec3 li:nth-child(2){
+    width: 240px;
+    margin-left: 30px;
+}
+.sec3 li:nth-child(3){
+    width: 311px;
+    margin-left: 15px;
+}
+.sec3 li:nth-child(4){
+    width: 220px;
+    margin-left: 10px;
+}
+
+.sec3 li img{
+    width: 55px;
+    margin-top: -17px;
+    margin-left: 30px;
+}
+
+.sec3 p:last-child{
+    margin-top: 40px;
+    margin-left: 110px;
+}
+
+
+/* ======================================================================================================================== section4 */
+.sec4{
+    width: 1340px; height: 500px;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+.sec4 h2{
+    font-family: 'NEXEN_TIRE_Bold';
+    font-size: 35px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.sec4 ul{
+    width: 1000px; height: 300px;
+    display: flex;
+    margin-left: 170px;
+    margin-top: 30px;
+    /* border: 1px solid; */
+}
+
+.sec4 li{
+    float: left;
+    flex: 1;
+    text-align: center;
+}
+
+.sec4 img{
+    border: 1px solid #e0e0e0;
+}
+
+.sec4 p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sec4 .sec4-btn{
+    width: 200px; height: 50px;
+    background-color: #ff8a00;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 570px;
+}
+.sec4 .sec4-btn a{
+    padding: 11px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    /* background-color: #333; */
+}
+
+
+/* ======================================================================================================================== footer */
+footer{
+    width: 1340px; height: 210px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #493926;
+}
+
+footer .f-left{
+    float: left;
+}
+
+footer .f-logo{
+    display: inline-block;
+    margin-left: -490px;
+    margin-top: 5px;
+}
+
+footer .f-logo img{
+    width: 180px; height: 80px;
+}
+
+footer .f-adress{
+    float: left;
+    margin-left: 5px;
+    margin-top: 90px;
+}
+
+footer .f-adress li{
+    float: left;
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    color: #fff;
+    /* border-right: 1px  solid #d8d8d8; */
+}
+
+footer .f-adress address{
+    font-style: normal;
+}
+
+footer .f-left .fl-span{
+    font-size: 14px;
+    margin-left: 21px;
+    color: #cfcfcf;
+}
+
+footer .f-adress::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .f-right{
+    float: right;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+footer .f-right .fr-menu{
+    margin-bottom: 10px;
+}
+
+footer .f-right .fr-menu li{
+    float: left;
+    padding-left: 40px;
+}
+
+footer .f-right .fr-menu a{
+    color: #fff;
+}
+
+footer .f-right .fr-menu a:hover{
+    color: #ff8a00;
+    font-weight: bold;
+}
+
+footer .f-right .fr-span{
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+footer .f-right .fr-span strong{
+    color: #fff;
+}
+
+
+footer .fr-menu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .f-sns{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer .f-sns li{
+    padding-left: 15px;
+}
+
+footer .f-sns li:nth-child(1) img{
+    width: 40px; height: 35px;
+}
+footer .f-sns li:nth-child(2) img{
+    width: 40px; height: 38px;
+}
+footer .f-sns li:nth-child(3) img{
+    width: 40px; height: 40px;
+}
+footer .f-sns li:nth-child(4) img{
+    width: 29px; height: 29px;
+    margin-top: 5px;
+}
+
+
+/* ======================================================================================================================== quick */
+.quick{
+    position: fixed;
+    right: 140px;
+    bottom: 500px;
+}
+
+.quick .give{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #36af3d;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    position: relative;
+} 
+
+.quick a{
+    width: 100%; height: 100%;
+    display: block;
+}
+
+.quick .give img{
+    width: 35px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.quick .give p{
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%; left: 15%;
+}
+
+.quick .get{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #36af3d;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    position: relative;
+} 
+
+.quick .get p{
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 12%; left: 15%;
+}
+
+.quick .get img{
+    width: 37px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.quick .qna{
+    display: block;
+    width: 70px; height: 70px;
+    background-color: #493926;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+} 
+
+.quick .qna p{
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -5%; left: 15%;
+}
+
+.quick .qna img{
+    width: 37px;
+    margin-top: 2px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -90%);
+}
